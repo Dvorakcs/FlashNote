@@ -5,6 +5,12 @@ namespace FlashNote
         public Form1()
         {
             InitializeComponent();
+            LocalFileTXT.Text = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+        }
+
+        private void CreateFileBTN_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

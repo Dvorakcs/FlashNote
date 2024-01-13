@@ -28,12 +28,74 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            CreateFileBTN = new Button();
+            dateTimePicker1 = new DateTimePicker();
+            NameFileTXT = new TextBox();
+            textBox2 = new TextBox();
+            LocalFileTXT = new TextBox();
+            SuspendLayout();
+            // 
+            // CreateFileBTN
+            // 
+            CreateFileBTN.Location = new Point(119, 165);
+            CreateFileBTN.Name = "CreateFileBTN";
+            CreateFileBTN.Size = new Size(122, 23);
+            CreateFileBTN.TabIndex = 0;
+            CreateFileBTN.Text = "Criar";
+            CreateFileBTN.UseVisualStyleBackColor = true;
+            CreateFileBTN.Click += CreateFileBTN_Click;
+            // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.Location = new Point(86, 117);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(200, 23);
+            dateTimePicker1.TabIndex = 1;
+            // 
+            // NameFileTXT
+            // 
+            NameFileTXT.Location = new Point(86, 59);
+            NameFileTXT.Name = "NameFileTXT";
+            NameFileTXT.Size = new Size(200, 23);
+            NameFileTXT.TabIndex = 2;
+            NameFileTXT.Text = "Nome Do Arquivo";
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(0, 0);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(100, 23);
+            textBox2.TabIndex = 0;
+            // 
+            // LocalFileTXT
+            // 
+            LocalFileTXT.Location = new Point(86, 88);
+            LocalFileTXT.Name = "LocalFileTXT";
+            LocalFileTXT.Size = new Size(200, 23);
+            LocalFileTXT.TabIndex = 3;
+            LocalFileTXT.Text = "Local do arquivo";
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(373, 252);
+            Controls.Add(LocalFileTXT);
+            Controls.Add(NameFileTXT);
+            Controls.Add(dateTimePicker1);
+            Controls.Add(CreateFileBTN);
+            Name = "Form1";
+            Text = "FlashNote";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Button CreateFileBTN;
+        private DateTimePicker dateTimePicker1;
+        private TextBox NameFileTXT;
+        private TextBox textBox2;
+        private TextBox LocalFileTXT;
     }
 }
