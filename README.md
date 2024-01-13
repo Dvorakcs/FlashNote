@@ -14,7 +14,9 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 
 - [x] Create - UI (Botao create, Data de termino, nome do arquivo e local da pasta)
 - [x] Criar regra de Criar Notas
-- [ ] Criar regra de Exclusao Notas
+- [x] Criar regra de Exclusao Notas
+- [ ] Modificar o local que salva
+- [ ] Criar editor de Texto
  
 ## 🤝 Colaboradores
 
