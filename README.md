@@ -12,7 +12,7 @@
 
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
-- [ ] Create - UI (Botao create, Data de termino, nome do arquivo e local da pasta)
+- [x] Create - UI (Botao create, Data de termino, nome do arquivo e local da pasta)
 - [ ] Criar regra de Criar Notas
 - [ ] Criar regra de Exclusao Notas
  
