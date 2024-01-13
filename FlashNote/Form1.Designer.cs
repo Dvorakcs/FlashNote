@@ -29,34 +29,36 @@
         private void InitializeComponent()
         {
             CreateFileBTN = new Button();
-            dateTimePicker1 = new DateTimePicker();
+            TimeEndDateTime = new DateTimePicker();
             NameFileTXT = new TextBox();
             textBox2 = new TextBox();
             LocalFileTXT = new TextBox();
+            EditFileBTN = new Button();
             SuspendLayout();
             // 
             // CreateFileBTN
             // 
-            CreateFileBTN.Location = new Point(119, 165);
+            CreateFileBTN.Location = new Point(131, 109);
             CreateFileBTN.Name = "CreateFileBTN";
-            CreateFileBTN.Size = new Size(122, 23);
+            CreateFileBTN.Size = new Size(135, 23);
             CreateFileBTN.TabIndex = 0;
             CreateFileBTN.Text = "Criar";
             CreateFileBTN.UseVisualStyleBackColor = true;
             CreateFileBTN.Click += CreateFileBTN_Click;
             // 
-            // dateTimePicker1
+            // TimeEndDateTime
             // 
-            dateTimePicker1.Location = new Point(86, 117);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(200, 23);
-            dateTimePicker1.TabIndex = 1;
+            TimeEndDateTime.Location = new Point(25, 109);
+            TimeEndDateTime.Name = "TimeEndDateTime";
+            TimeEndDateTime.Size = new Size(100, 23);
+            TimeEndDateTime.TabIndex = 1;
+            TimeEndDateTime.Value = new DateTime(2024, 1, 13, 13, 5, 1, 0);
             // 
             // NameFileTXT
             // 
-            NameFileTXT.Location = new Point(86, 59);
+            NameFileTXT.Location = new Point(25, 51);
             NameFileTXT.Name = "NameFileTXT";
-            NameFileTXT.Size = new Size(200, 23);
+            NameFileTXT.Size = new Size(137, 23);
             NameFileTXT.TabIndex = 2;
             NameFileTXT.Text = "Nome Do Arquivo";
             // 
@@ -69,20 +71,30 @@
             // 
             // LocalFileTXT
             // 
-            LocalFileTXT.Location = new Point(86, 88);
+            LocalFileTXT.Location = new Point(25, 80);
             LocalFileTXT.Name = "LocalFileTXT";
-            LocalFileTXT.Size = new Size(200, 23);
+            LocalFileTXT.Size = new Size(241, 23);
             LocalFileTXT.TabIndex = 3;
             LocalFileTXT.Text = "Local do arquivo";
+            // 
+            // EditFileBTN
+            // 
+            EditFileBTN.Location = new Point(168, 51);
+            EditFileBTN.Name = "EditFileBTN";
+            EditFileBTN.Size = new Size(98, 23);
+            EditFileBTN.TabIndex = 4;
+            EditFileBTN.Text = "Editar Arquivo";
+            EditFileBTN.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(373, 252);
+            ClientSize = new Size(292, 198);
+            Controls.Add(EditFileBTN);
             Controls.Add(LocalFileTXT);
             Controls.Add(NameFileTXT);
-            Controls.Add(dateTimePicker1);
+            Controls.Add(TimeEndDateTime);
             Controls.Add(CreateFileBTN);
             Name = "Form1";
             Text = "FlashNote";
@@ -93,9 +105,10 @@
         #endregion
 
         private Button CreateFileBTN;
-        private DateTimePicker dateTimePicker1;
+        private DateTimePicker TimeEndDateTime;
         private TextBox NameFileTXT;
         private TextBox textBox2;
         private TextBox LocalFileTXT;
+        private Button EditFileBTN;
     }
 }
