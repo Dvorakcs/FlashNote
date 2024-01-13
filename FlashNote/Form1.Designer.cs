@@ -71,6 +71,8 @@
             // 
             // LocalFileTXT
             // 
+            LocalFileTXT.BackColor = SystemColors.Control;
+            LocalFileTXT.Enabled = false;
             LocalFileTXT.Location = new Point(25, 80);
             LocalFileTXT.Name = "LocalFileTXT";
             LocalFileTXT.Size = new Size(241, 23);
@@ -79,6 +81,7 @@
             // 
             // EditFileBTN
             // 
+            EditFileBTN.Enabled = false;
             EditFileBTN.Location = new Point(168, 51);
             EditFileBTN.Name = "EditFileBTN";
             EditFileBTN.Size = new Size(98, 23);
