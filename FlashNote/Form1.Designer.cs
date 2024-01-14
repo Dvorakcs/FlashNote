@@ -33,12 +33,13 @@
             NameFileTXT = new TextBox();
             textBox2 = new TextBox();
             LocalFileTXT = new TextBox();
-            EditFileBTN = new Button();
+            listBox1 = new ListBox();
+            WidgetModelCheckBox = new CheckBox();
             SuspendLayout();
             // 
             // CreateFileBTN
             // 
-            CreateFileBTN.Location = new Point(131, 109);
+            CreateFileBTN.Location = new Point(131, 84);
             CreateFileBTN.Name = "CreateFileBTN";
             CreateFileBTN.Size = new Size(135, 23);
             CreateFileBTN.TabIndex = 0;
@@ -48,7 +49,7 @@
             // 
             // TimeEndDateTime
             // 
-            TimeEndDateTime.Location = new Point(25, 109);
+            TimeEndDateTime.Location = new Point(25, 84);
             TimeEndDateTime.Name = "TimeEndDateTime";
             TimeEndDateTime.Size = new Size(100, 23);
             TimeEndDateTime.TabIndex = 1;
@@ -56,7 +57,7 @@
             // 
             // NameFileTXT
             // 
-            NameFileTXT.Location = new Point(25, 51);
+            NameFileTXT.Location = new Point(25, 26);
             NameFileTXT.Name = "NameFileTXT";
             NameFileTXT.Size = new Size(137, 23);
             NameFileTXT.TabIndex = 2;
@@ -73,28 +74,39 @@
             // 
             LocalFileTXT.BackColor = SystemColors.Control;
             LocalFileTXT.Enabled = false;
-            LocalFileTXT.Location = new Point(25, 80);
+            LocalFileTXT.Location = new Point(25, 55);
             LocalFileTXT.Name = "LocalFileTXT";
             LocalFileTXT.Size = new Size(241, 23);
             LocalFileTXT.TabIndex = 3;
             LocalFileTXT.Text = "Local do arquivo";
             // 
-            // EditFileBTN
+            // listBox1
             // 
-            EditFileBTN.Enabled = false;
-            EditFileBTN.Location = new Point(168, 51);
-            EditFileBTN.Name = "EditFileBTN";
-            EditFileBTN.Size = new Size(98, 23);
-            EditFileBTN.TabIndex = 4;
-            EditFileBTN.Text = "Editar Arquivo";
-            EditFileBTN.UseVisualStyleBackColor = true;
+            listBox1.FormattingEnabled = true;
+            listBox1.ItemHeight = 15;
+            listBox1.Location = new Point(25, 137);
+            listBox1.Name = "listBox1";
+            listBox1.Size = new Size(241, 169);
+            listBox1.TabIndex = 5;
+            // 
+            // WidgetModelCheckBox
+            // 
+            WidgetModelCheckBox.AutoSize = true;
+            WidgetModelCheckBox.Location = new Point(168, 28);
+            WidgetModelCheckBox.Name = "WidgetModelCheckBox";
+            WidgetModelCheckBox.Size = new Size(101, 19);
+            WidgetModelCheckBox.TabIndex = 6;
+            WidgetModelCheckBox.Text = "Widget  Mode";
+            WidgetModelCheckBox.UseVisualStyleBackColor = true;
+            WidgetModelCheckBox.CheckedChanged += WidgetModeClick;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(292, 198);
-            Controls.Add(EditFileBTN);
+            ClientSize = new Size(292, 343);
+            Controls.Add(WidgetModelCheckBox);
+            Controls.Add(listBox1);
             Controls.Add(LocalFileTXT);
             Controls.Add(NameFileTXT);
             Controls.Add(TimeEndDateTime);
@@ -112,6 +124,7 @@
         private TextBox NameFileTXT;
         private TextBox textBox2;
         private TextBox LocalFileTXT;
-        private Button EditFileBTN;
+        private ListBox listBox1;
+        private CheckBox WidgetModelCheckBox;
     }
 }
